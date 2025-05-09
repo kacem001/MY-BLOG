@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="article.js" defer></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="red-header">
+        <div class="container header-container">
+            <div>
+                <h1>Article Details</h1>
+            </div>
+            <nav>
+                <br>
+                <ul>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#recomanded">Recomanded</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <br>
+            </nav>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <main class="container" id="article-main">
+        <!-- Article content will be injected here -->
+    </main>
+
+    <main class="container">
+
+        <section id="contact" class="section">
+            <article class="article-block contact-block">
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <!-- Chatbot  Button -->
+    <button class="chatbot-toggle" id="chatbot-toggle">
+        <span class="chatbot-toggle-icon">💬</span>
+    </button>
+
+
+    <button class="gemini-toggle" id="gemini-toggle">
+        <span class="gemini-toggle-icon">🤖</span>
+    </button>
+
+    <!-- Gemini Chatbot -->
+
+    <div class="gemini-container" id="gemini-container">
+        <div class="gemini-header">
+            <span>Gemini AI</span>
+            <button class="gemini-close" id="gemini-close">&times;</button>
+        </div>
+        <div class="gemini-content" id="gemini-content">
+            <p>Ask Gemini a question...</p>
+        </div>
+        <div class="gemini-input-container">
+            <input type="text" id="gemini-input" placeholder="Type your question...">
+            <button id="gemini-button">Ask</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Blog</p>
+        </div>
+        <!-- From Uiverse.io by milley69 -->
+        <div class="loading">
+            <svg width="64px" height="48px">
+                <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+                <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+            </svg>
+        </div>
+    </footer>
+</body>
+
+
+</html>
